@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="my-3 text-center text-primary">This is phone hunter app</header>
+    <main class="container mt-4">
+        <div class="input-group mb-3">
+            <input id="search-phone" type="text" class="form-control" placeholder="search phone"  aria-describedby="button-addon2">
+            <button onclick="displayPhone()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        </div>
+        <div id="phone-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+        </div>
+
+        <div id="not-found" class="d-none">
+            <h2 class="text-danger">There is no phone in this name</h2>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
