@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="my-3 text-center text-primary">This is phone hunter app</header>
+    <header class="my-3 text-center text-primary">
+        This is phone hunter app
+        <div class="fs-2 text-black-50 text-center">
+            <h3>We have apple , iphone, samsung in our store. search phone what you.</h3>
+        </div>
+    </header>
     <main class="container mt-4">
         <div class="input-group mb-3">
             <input id="search-phone" type="text" class="form-control" placeholder="search phone"  aria-describedby="button-addon2">
@@ -22,6 +27,16 @@
         <div id="not-found" class="d-none">
             <h2 class="text-danger">There is no phone in this name</h2>
         </div>
+
+
+        <section  id="loader" class="d-none">
+            <div style="height: 500px;" class="d-flex align-items-center justify-content-center">
+                
+                <div class="spinner-border m-5" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 

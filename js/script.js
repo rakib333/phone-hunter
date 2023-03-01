@@ -29,15 +29,29 @@ const displayPhones = (data) => {
             </div>
         </div>
         `
-
-        phoneContainer.appendChild(makeDiv)
+        phoneContainer.appendChild(makeDiv);
+        
     }
+    toggleLoader(false)
 };
 
 const displayPhone = () => {
+    toggleLoader(true);
     const search = document.getElementById('search-phone').value;
     document.getElementById('search-phone').value = '';
     loadPhones(search)
+
+
+};
+
+const toggleLoader = isLoading => {
+    const loaderSection = document.getElementById('loader');
+    if (isLoading) {
+        loaderSection.classList.remove('d-none')
+    }
+    else {
+        loaderSection.classList.add('d-none')
+    }
 }
 
-loadPhones('iphone')
+// loadPhones('iphone')
